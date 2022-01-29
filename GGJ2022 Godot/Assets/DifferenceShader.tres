@@ -1,0 +1,20 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource path="res://Assets/PlatformOutline.png" type="Texture" id=1]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type spatial;
+
+uniform sampler2D outline : hint_albedo;
+
+vec4 difference(vec4 base, vec4 blend){
+	return abs(base - blend);
+}
+
+void fragment(){
+	ALBEDO = difference(vec4(1.0,1.0,1.0,1.0), texture(outline,UV)).rgb;
+}"
+
+[resource]
+shader = SubResource( 1 )
+shader_param/outline = ExtResource( 1 )
