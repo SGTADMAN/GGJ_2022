@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=2]
 
-[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/PlayerCamera.gd" type="Script" id=2]
 [ext_resource path="res://Assets/PlayerSprite_run_32x64.png" type="Texture" id=3]
 [ext_resource path="res://Assets/PlayerSprite_idle_SIDE_32x64.png" type="Texture" id=4]
@@ -361,10 +361,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 1.7 )
 script = ExtResource( 2 )
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 1
 alpha_cut = 2
 texture = ExtResource( 6 )
 hframes = 6
-frame = 4
+frame = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Idle"

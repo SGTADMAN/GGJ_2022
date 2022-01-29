@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/DifferenceShader.tres" type="Material" id=1]
 [ext_resource path="res://Assets/Cube.mesh" type="ArrayMesh" id=2]
-[ext_resource path="res://Props/Platform.gd" type="Script" id=3]
+[ext_resource path="res://Props/MovingPlatform.gd" type="Script" id=3]
 
 [sub_resource type="ConcavePolygonShape" id=2]
 data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
@@ -13,11 +13,17 @@ mesh = ExtResource( 2 )
 material/0 = ExtResource( 1 )
 script = ExtResource( 3 )
 
-[node name="StaticBody" type="StaticBody" parent="."]
+[node name="StaticBody" type="KinematicBody" parent="."]
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
 shape = SubResource( 2 )
 
 [node name="DestructTimer" type="Timer" parent="."]
 
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
 [connection signal="timeout" from="DestructTimer" to="." method="_on_DestructTimer_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
