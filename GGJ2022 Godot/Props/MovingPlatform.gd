@@ -7,7 +7,7 @@ export(float) var duration = 1.0
 
 func _ready():
 	$Timer.wait_time = duration
-	$Tween.interpolate_property(self, "translation", start_point, end_point, 1, Tween.TRANS_LINEAR, Tween.EASE_IN )
+	$Tween.interpolate_property(self, "translation", start_point, end_point, duration, Tween.TRANS_LINEAR, Tween.EASE_IN )
 	$Tween.start()
 
 func _process(_delta):
