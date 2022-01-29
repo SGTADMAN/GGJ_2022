@@ -10,7 +10,7 @@
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.638139, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.9842, 2.60078, 61.2304 )
 
 [node name="Map" parent="." instance=ExtResource( 2 )]
 
