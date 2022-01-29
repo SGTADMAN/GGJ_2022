@@ -9,10 +9,11 @@
 
 [node name="Main" type="Node"]
 script = ExtResource( 3 )
-area_spawn = ""
+area_spawn = "Area3"
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0158005, 0.60078, 0.2304 )
+collision_mask = 2
 
 [node name="Map" parent="." instance=ExtResource( 2 )]
 

@@ -48,6 +48,7 @@ duration = 10.0
 
 [node name="Area" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.99951, 0, 14.007 )
+collision_layer = 4
 
 [node name="CollisionShape" type="CollisionShape" parent="Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.78906, -2.67924, 5.49082 )

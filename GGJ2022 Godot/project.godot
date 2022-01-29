@@ -67,6 +67,12 @@ CAMERA={
  ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="Player"
+3d_physics/layer_2="Plaform"
+3d_physics/layer_3="Area"
+
 [physics]
 
 common/enable_pause_aware_picking=true
