@@ -1,0 +1,10 @@
+Bugs:
+
+Jumping in place doesn't change the sprite
+Player is not attached to the platforms when they move, as in the platform slides under the player without them moving with it.
+
+Changes:
+
+Implement a proper deathplane rather than checking if the player is -1 on y-axis
+Add checkpoints
+Disable 2D stuff for now
