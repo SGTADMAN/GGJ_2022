@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/jazz_piano_medley_81.mp3-effb924a99a19d23d184ca432f5653b5.mp3str"
+
+[deps]
+
+source_file="res://Assets/jazz_piano_medley_81.mp3"
+dest_files=[ "res://.import/jazz_piano_medley_81.mp3-effb924a99a19d23d184ca432f5653b5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

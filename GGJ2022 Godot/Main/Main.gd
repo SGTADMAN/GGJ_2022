@@ -1,8 +1,12 @@
 extends Node
 
+export(String) var area_spawn = "Tutorial"
+
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	PlayerGlobals.spawn_point = $SpawnPoint.global_transform
+	area_spawn = "Map/" + area_spawn + "/SpawnPoint"
+	PlayerGlobals.spawn_point = get_node(area_spawn).global_transform
+	$Player.global_transform = PlayerGlobals.spawn_point
 	Engine.target_fps = 60
 	Engine.iterations_per_second = 60
 

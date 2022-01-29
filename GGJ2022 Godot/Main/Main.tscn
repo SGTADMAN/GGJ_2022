@@ -1,16 +1,18 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Map/Map.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Main/Main.gd" type="Script" id=3]
 [ext_resource path="res://Interfaces/Interfaces.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Environment/Environment.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/jazz_piano_medley_81.mp3" type="AudioStream" id=6]
 
 [node name="Main" type="Node"]
 script = ExtResource( 3 )
+area_spawn = "Area1"
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.9842, 2.60078, 61.2304 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0158005, 0.60078, 0.2304 )
 
 [node name="Map" parent="." instance=ExtResource( 2 )]
 
@@ -19,4 +21,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.9842, 2.60078, 61.2304 )
 [node name="Environment" parent="." instance=ExtResource( 5 )]
 
 [node name="SpawnPoint" type="Position3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.951305, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -15.0
+autoplay = true
