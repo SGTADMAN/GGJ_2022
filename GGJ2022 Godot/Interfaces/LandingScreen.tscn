@@ -31,42 +31,57 @@ __meta__ = {
 }
 
 [node name="LeftPad" type="Control" parent="HBoxContainer"]
-margin_right = 338.0
+margin_right = 321.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 
 [node name="MenuCentre" type="VBoxContainer" parent="HBoxContainer"]
-margin_left = 342.0
-margin_right = 681.0
+margin_left = 325.0
+margin_right = 699.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 
 [node name="TopPad" type="Control" parent="HBoxContainer/MenuCentre"]
-margin_right = 339.0
-margin_bottom = 161.0
+margin_right = 374.0
+margin_bottom = 110.0
+size_flags_vertical = 3
+
+[node name="Title" type="Label" parent="HBoxContainer/MenuCentre"]
+margin_top = 114.0
+margin_right = 374.0
+margin_bottom = 148.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 0 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 0 )
+text = "If Only The World Was So Black & White"
+
+[node name="MiddlePad" type="Control" parent="HBoxContainer/MenuCentre"]
+margin_top = 152.0
+margin_right = 374.0
+margin_bottom = 263.0
 size_flags_vertical = 3
 
 [node name="CenterContainer" type="CenterContainer" parent="HBoxContainer/MenuCentre"]
-margin_top = 165.0
-margin_right = 339.0
-margin_bottom = 215.0
+margin_top = 267.0
+margin_right = 374.0
+margin_bottom = 317.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="StartButton" type="TextureButton" parent="HBoxContainer/MenuCentre/CenterContainer"]
-margin_left = 44.0
-margin_right = 294.0
+margin_left = 62.0
+margin_right = 312.0
 margin_bottom = 50.0
 size_flags_horizontal = 0
 texture_normal = ExtResource( 1 )
 stretch_mode = 2
 
 [node name="StartLabel" type="Label" parent="HBoxContainer/MenuCentre/CenterContainer"]
-margin_left = 145.0
-margin_top = 7.0
-margin_right = 194.0
-margin_bottom = 43.0
+margin_left = 163.0
+margin_top = 8.0
+margin_right = 210.0
+margin_bottom = 42.0
 text = "Start"
 align = 1
 valign = 1
@@ -74,46 +89,46 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MiddlePad" type="Control" parent="HBoxContainer/MenuCentre"]
-margin_top = 219.0
-margin_right = 339.0
-margin_bottom = 380.0
+[node name="MiddlePad2" type="Control" parent="HBoxContainer/MenuCentre"]
+margin_top = 321.0
+margin_right = 374.0
+margin_bottom = 431.0
 size_flags_vertical = 3
 
 [node name="CenterContainer2" type="CenterContainer" parent="HBoxContainer/MenuCentre"]
-margin_top = 384.0
-margin_right = 339.0
-margin_bottom = 434.0
+margin_top = 435.0
+margin_right = 374.0
+margin_bottom = 485.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ExitButton" type="TextureButton" parent="HBoxContainer/MenuCentre/CenterContainer2"]
-margin_left = 44.0
-margin_right = 294.0
+margin_left = 62.0
+margin_right = 312.0
 margin_bottom = 50.0
 size_flags_horizontal = 3
 texture_normal = ExtResource( 1 )
 stretch_mode = 2
 
 [node name="ExitLabel" type="Label" parent="HBoxContainer/MenuCentre/CenterContainer2"]
-margin_left = 147.0
-margin_top = 7.0
-margin_right = 191.0
-margin_bottom = 43.0
+margin_left = 166.0
+margin_top = 8.0
+margin_right = 208.0
+margin_bottom = 42.0
 text = "Exit"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="BottomPad" type="Control" parent="HBoxContainer/MenuCentre"]
-margin_top = 438.0
-margin_right = 339.0
+margin_top = 489.0
+margin_right = 374.0
 margin_bottom = 600.0
 size_flags_vertical = 3
 
 [node name="RightPad" type="Control" parent="HBoxContainer"]
-margin_left = 685.0
+margin_left = 703.0
 margin_right = 1024.0
 margin_bottom = 600.0
 size_flags_horizontal = 3

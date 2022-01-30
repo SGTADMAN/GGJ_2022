@@ -21,3 +21,4 @@ func _process(_delta):
 func restart():
 	PlayerGlobals.spawn_point = get_node("Map/Tutorial/SpawnPoint").global_transform
 	$Player.global_transform = PlayerGlobals.spawn_point
+	$Player/PlayerCamera.update_camera_view()

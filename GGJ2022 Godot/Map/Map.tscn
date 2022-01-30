@@ -49,6 +49,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0006, -2.5, 25.2109 )
 tip = "res://Texts/DumbText.tscn"
 billboard = false
 
+[node name="TextTip" parent="Area3" instance=ExtResource( 18 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -22.5, 1.5, 15 )
+tip = "res://Texts/ArrowDown.tscn"
+
 [node name="Area4" parent="." instance=ExtResource( 7 )]
 
 [node name="Area5" parent="." instance=ExtResource( 8 )]
@@ -62,7 +66,7 @@ billboard = false
 [node name="Area9" parent="." instance=ExtResource( 11 )]
 
 [node name="EndArea" type="Area" parent="Area9"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -76.2828, 11, 72.5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -130, 11, 72.5 )
 collision_layer = 4
 script = ExtResource( 12 )
 

@@ -9,7 +9,6 @@
 
 [node name="Main" type="Node"]
 script = ExtResource( 3 )
-area_spawn = "Area9"
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0189943, 1.02666, -0.023591 )

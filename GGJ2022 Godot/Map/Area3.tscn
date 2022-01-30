@@ -17,24 +17,24 @@ type = true
 destruct_time = 0.5
 
 [node name="Platform20" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -13.1682, -3.5, 25.0251 )
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -14, -3.5, 25 )
 skeleton = NodePath("../..")
 type = true
 destructible = true
 
 [node name="Platform21" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -9.168, -3.5, 50 )
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -9, -3.5, 50 )
 skeleton = NodePath("../..")
 type = true
 destructible = true
 
 [node name="Wall5" parent="." instance=ExtResource( 2 )]
-transform = Transform( -1.09278e-08, 0, 1, 0, 1, 0, -0.25, 0, -4.37114e-08, -11.15, -2.5, 25 )
+transform = Transform( -1.09278e-08, 0, 1, 0, 1, 0, -0.25, 0, -4.37114e-08, -11.5, -2.5, 25 )
 skeleton = NodePath("../..")
 type = true
 
 [node name="Wall6" parent="." instance=ExtResource( 2 )]
-transform = Transform( -1.09278e-08, 0, 1, 0, 1, 0, -0.25, 0, -4.37114e-08, -11.15, -2.5, 50 )
+transform = Transform( -1.09278e-08, 0, 1, 0, 1, 0, -0.25, 0, -4.37114e-08, -11.5, -2.5, 50 )
 skeleton = NodePath("../..")
 type = true
 

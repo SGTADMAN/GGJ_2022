@@ -12,7 +12,8 @@ config_version=4
 
 config/name="GGJ2022"
 run/main_scene="res://Main/Main.tscn"
-config/icon="res://Assets/icon.png"
+boot_splash/image="res://Assets/TeamDingo_LogoBlack_1080x540.png"
+config/icon="res://Assets/TeamDingo_LogoBlack_1080x540.png"
 
 [autoload]
 
