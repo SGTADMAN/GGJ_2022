@@ -6,6 +6,7 @@ export(float) var destruct_time = 1.0
 
 var active_texture
 var background_colour
+var text_colour
 var cracked = false
 
 func _ready():
@@ -17,6 +18,7 @@ func _ready():
 		else:
 			active_texture = load("res://Assets/OutlineWhite.tres")
 		background_colour = Color( 0, 0, 0, 0 )
+		text_colour = Color(1,1,1)
 	else:
 		self.set_surface_material(0,load("res://Assets/White.tres"))
 		if(destructible == true):
@@ -24,10 +26,12 @@ func _ready():
 		else:
 			active_texture = load("res://Assets/OutlineBlack.tres")
 		background_colour = Color( 1, 1, 1, 1 )
+		text_colour = Color(0,0,0)
 
 func change_material():
 	material_override = active_texture
 	EnvironmentGlobal.environment.background_color = background_colour
+	InterfaceGlobal.change_theme_colour(text_colour)
 	if(destructible and !cracked):
 		$DestructTimer.start()
 		cracked = true

@@ -12,7 +12,7 @@ script = ExtResource( 3 )
 area_spawn = "Area9"
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0158005, 0.60078, 0.2304 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0189943, 1.02666, -0.023591 )
 collision_mask = 2
 
 [node name="Map" parent="." instance=ExtResource( 2 )]

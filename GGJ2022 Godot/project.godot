@@ -18,6 +18,8 @@ config/icon="res://Assets/icon.png"
 
 PlayerGlobals="*res://Globals/PlayerGlobals.gd"
 EnvironmentGlobal="*res://Globals/EnvironmentGlobal.gd"
+InterfaceGlobal="*res://Globals/InterfaceGlobal.gd"
+MainGlobal="*res://Globals/MainGlobal.gd"
 
 [input]
 
