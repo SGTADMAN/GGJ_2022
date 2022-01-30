@@ -1,0 +1,125 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Props/Platform.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Map/MapArea.gd" type="Script" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1.99776, 1, 1 )
+
+[node name="Area7" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="Platform45" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -41, 10, 72.5 )
+skeleton = NodePath("../..")
+type = true
+
+[node name="Platform46" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -43.1888, 10, 72.5 )
+skeleton = NodePath("../..")
+destructible = true
+destruct_time = 0.1
+
+[node name="Platform47" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -43.1888, 10, 74.7882 )
+skeleton = NodePath("../..")
+destructible = true
+destruct_time = 0.1
+
+[node name="Platform48" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -43.1888, 10, 70.1509 )
+skeleton = NodePath("../..")
+destruct_time = 0.1
+
+[node name="Platform49" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -45.4606, 10, 70.1509 )
+skeleton = NodePath("../..")
+type = true
+destruct_time = 0.1
+
+[node name="Platform50" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -45.4606, 10, 72.4819 )
+skeleton = NodePath("../..")
+type = true
+destructible = true
+destruct_time = 0.1
+
+[node name="Platform51" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -45.4606, 10, 74.837 )
+skeleton = NodePath("../..")
+type = true
+destructible = true
+destruct_time = 0.1
+
+[node name="Platform52" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -47.7127, 10, 70.1509 )
+skeleton = NodePath("../..")
+destructible = true
+destruct_time = 0.1
+
+[node name="Platform53" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -47.7127, 10, 72.4628 )
+skeleton = NodePath("../..")
+destruct_time = 0.1
+
+[node name="Platform54" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -47.7127, 10, 74.8372 )
+skeleton = NodePath("../..")
+destructible = true
+destruct_time = 0.1
+
+[node name="Platform55" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -49.9011, 10, 72.4628 )
+skeleton = NodePath("../..")
+type = true
+destruct_time = 0.1
+
+[node name="Platform56" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -49.9011, 10, 74.855 )
+skeleton = NodePath("../..")
+type = true
+destructible = true
+destruct_time = 0.1
+
+[node name="Platform57" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -49.9011, 10, 70.1114 )
+skeleton = NodePath("../..")
+type = true
+destructible = true
+destruct_time = 0.1
+
+[node name="Platform58" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -52.1182, 10, 70.1114 )
+skeleton = NodePath("../..")
+destructible = true
+destruct_time = 0.1
+
+[node name="Platform59" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -52.1182, 10, 72.5347 )
+skeleton = NodePath("../..")
+destructible = true
+destruct_time = 0.1
+
+[node name="Platform60" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -52.1182, 10, 74.8133 )
+skeleton = NodePath("../..")
+destruct_time = 0.1
+
+[node name="Platform61" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 0.25, 0, 0, 0, 1, -54.363, 10, 72.5472 )
+skeleton = NodePath("../..")
+type = true
+destruct_time = 0.1
+
+[node name="SpawnPoint" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -41.0842, 10.6486, 72.5752 )
+
+[node name="Area" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 10.7881, 72.4297 )
+collision_layer = 4
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11904, 0.245078, 0 )
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
