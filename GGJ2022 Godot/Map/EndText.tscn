@@ -1,0 +1,24 @@
+[gd_scene format=2]
+
+[node name="EndText" type="Spatial"]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 4.07535, 0 )
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 200, 200 )
+
+[node name="GUI" type="Control" parent="Viewport"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Viewport/GUI"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="ByeLabel" type="RichTextLabel" parent="Viewport/GUI/Panel"]
+margin_right = 200.0
+margin_bottom = 200.0
+text = "Bye!"
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+
+[node name="Area" type="Area" parent="MeshInstance"]
